@@ -1,0 +1,41 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 50px); /* Adjust height based on Navbar height */
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.home-logo {
+    max-width: 90%; /* Adjust based on actual logo size */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo-container, .text-container {
+        flex: none;
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+}
